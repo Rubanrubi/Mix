@@ -1,0 +1,11 @@
+$primary-color:#ff0000;
+$paragraph-color:#1a202c;
+
+body{
+  background-color:$primary-color;
+}
+
+// Unused css for purgeCss reference
+.add{
+    background-color: $paragraph-color;
+}
