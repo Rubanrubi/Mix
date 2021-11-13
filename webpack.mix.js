@@ -26,6 +26,9 @@ mix.js('resources/js/app.js', 'public/js')
     // Copy Image from resources to public while compiling
     .copy('resources/assets/img/','public/assets/img/')
 
+    // Copy Fonts from resources to public while compiling
+    .copy('resources/assets/fonts/','public/assets/fonts/')
+
     // Merge Multiple plain css to single css file in minified manner
     .styles([
         'resources/assets/css/app.css',
@@ -34,9 +37,9 @@ mix.js('resources/js/app.js', 'public/js')
 
     // Merge Multiple plain js to single js file in minified manner
     .scripts([
-        'resources/assets/js/app.js',
-        'resources/assets/js/core.js'], 'public/assets/js/all.js')
-        .sourceMaps()
+    'resources/assets/js/app.js',
+    'resources/assets/js/core.js'], 'public/assets/js/all.js')
+    .sourceMaps()
 
     // Code changes will automatically reflect in browser loads when laravel mix buid successfully
     .browserSync('http://localhost:8000/')
